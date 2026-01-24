@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="shine.png" />
+    <title>Lea Abdallah | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">
+        <h1>LEA ABDALLAH</h1>
+        <p>PORTFOLIO’25</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#resume" class="resume-btn">RESUME</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="left-text">
+          <h2>CREATIVE <span>DESIGNER</span><br />AND DEVELOPER.</h2>
+        </div>
+
+        <div class="right-text">
+          <p>
+            A designer who loves to code and a developer who loves to design. I
+            create things that look simple, but feel alive. For me, a good
+            website isn't just about pixels and performance, it's about how it
+            makes people feel when they use it.
+          </p>
+          <h3>MOVE PEOPLE, NOT JUST <span>SCREENS.</span></h3>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn light">LET'S COLLABORATE</a>
+            <a href="#projects" class="btn dark">HIRE ME</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+      <div class="container about-container">
+        <div class="about-image">
+          <img src="pic/lea.jpg" alt="Lea" />
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-text">
+            I am a computer science undergraduate with a passion for
+            development, UI design, and AI projects. I love solving problems,
+            creating functional interfaces and bringing ideas to life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-slider">
+            <div class="slide active">
+              <div class="slide-info">
+                <h3>Plan It - Assignment Deadline Manager</h3>
+                <p>
+                  Developed a full-stack assignment management web application
+                  with user authentication, dashboards, and CRUD features
+                </p>
+                <img
+                  src="pic/plan-it.png"
+                  alt="Plan It - Assignment Deadline Manager"
+                />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-info">
+                <h3>Twitter Sentiment Analysis – Machine Learning Project</h3>
+                <p>
+                  Developed a ML model to classify tweets into positive and
+                  negative sentiments.
+                </p>
+                <img src="pic/twittersentiment.jpg" alt="Twitter Sentiment" />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-info">
+                <h3>Nova – AI Personal Assistant Chatbot</h3>
+                <p>
+                  Created a conversational personal assistant, capable of
+                  managing reminders and maintaining memory.
+                </p>
+                <img src="pic/nova.PNG" alt="Nova Chatbot" />
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-info">
+                <h3>FIFA 23 Data Analysis</h3>
+                <p>
+                  Visualized FIFA 23 data using Power BI, analyzing player
+                  performance trends.
+                </p>
+                <img src="pic/fifa.png" alt="Fifa 23 Data Analysis" />
+              </div>
+            </div>
+            <!-- Add more projects here -->
+            <!-- Navigation Arrows -->
+            <span class="arrow prev">&#10094;</span>
+            <span class="arrow next">&#10095;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section-->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/maqelgon"
+          method="POST"
+          class="contact-form"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Portfolio Contact Message"
+          />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <p id="form-message"></p>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+      <div class="container">
+        <h2 class="section-title">Resume</h2>
+
+        <!-- Download Button -->
+        <div class="resume-download">
+          <a href="Lea Abdallah - Resume.pdf" download class="download-btn"
+            >Download PDF</a
+          >
+        </div>
+
+        <!-- Resume Content -->
+        <div class="resume-wrapper">
+          <!-- left side -->
+          <div class="resume-left">
+            <div class="resume-block">
+              <h3>Education</h3>
+              <p>
+                <strong>Bachelor of Computer Science</strong>, American
+                University of Science and Technology (2023 - Present)
+              </p>
+            </div>
+
+            <div class="resume-block">
+              <h3>Experience</h3>
+              <p>
+                <strong>Front-end Intern</strong>, Cybersecurity Project (2025)
+              </p>
+              <p>
+                <strong>Software and Hardware Maintenance Technician</strong>
+                (2024)
+              </p>
+            </div>
+
+            <div class="resume-block">
+              <h3>Projects</h3>
+              <p>
+                Plan It - Assignment Deadline Manager – Full-Stack Web
+                Application<br />
+                Twitter Sentiment Analysis – Machine Learning Project<br />
+                Nova – AI Personal Assistant Chatbot<br />
+                FIFA 23 Data Analysis
+              </p>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="resume-right">
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill">
+                <span>HTML / CSS / JavaScript </span>
+                <div class="skill-bar">
+                  <div class="skill-level" data-skill="90%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>React</span>
+                <div class="skill-bar">
+                  <div class="skill-level" data-skill="85%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>Python</span>
+                <div class="skill-bar">
+                  <div class="skill-level" data-skill="80%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span>SQL</span>
+                <div class="skill-bar">
+                  <div class="skill-level" data-skill="80%"></div>
+                </div>
+              </div>
+              <div class="skill">
+                <span> + Java, C++, Azure, Power Bi, and more...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect Section -->
+    <section id="social" class="section">
+      <div class="container social-container">
+        <h2 class="section-title">Connect with Me</h2>
+        <div class="social-links">
+          <a
+            href="https://github.com/leaabdallah"
+            target="_blank"
+            class="social-icon"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lea-abdallah-3923492a3"
+            target="_blank"
+            class="social-icon"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://x.com/leya_abdallah"
+            target="_blank"
+            class="social-icon"
+            aria-label="Twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/leya.abdallahh/?hl=en"
+            target="_blank"
+            class="social-icon"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // navbar close effect
+      let lastScrollTop = 0;
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        const currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop && currentScroll > 100) {
+          // scrolling down
+          navbar.classList.add("hidden");
+        } else {
+          // scrolling up
+          navbar.classList.remove("hidden");
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // avoid negative scroll
+      });
+      // Smooth scroll effect
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      const slides = document.querySelectorAll(".slide");
+      const next = document.querySelector(".arrow.next");
+      const prev = document.querySelector(".arrow.prev");
+      let current = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove("active");
+        });
+        slides[index].classList.add("active");
+      }
+
+      // Next Slide
+      next.addEventListener("click", () => {
+        current = (current + 1) % slides.length;
+        showSlide(current);
+      });
+
+      // Previous Slide
+      prev.addEventListener("click", () => {
+        current = (current - 1 + slides.length) % slides.length;
+        showSlide(current);
+      });
+
+      const form = document.getElementById("contact-form");
+      const formMessage = document.getElementById("form-message");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault(); // STOP redirect
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (response.ok) {
+            const name = formData.get("name");
+            formMessage.textContent = `Thank you ${name}! Your message has been sent.`;
+            form.reset();
+          } else {
+            formMessage.textContent =
+              "Oops! Something went wrong. Please try again.";
+            formMessage.style.color = "red";
+          }
+        } catch (error) {
+          formMessage.textContent =
+            "Network error. Please check your connection.";
+          formMessage.style.color = "red";
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const skillLevels = document.querySelectorAll(".skill-level");
+        const resumeSection = document.querySelector("#resume");
+        let animationPlayed = false;
+
+        // Function to animate skill bars
+        function animateSkills() {
+          if (!animationPlayed) {
+            skillLevels.forEach((level) => {
+              const width = level.getAttribute("data-skill");
+              level.style.width = width;
+            });
+            animationPlayed = true;
+          }
+        }
+
+        // Intersection Observer for scrolling
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animateSkills();
+              }
+            });
+          },
+          { threshold: 0.3 },
+        ); // Trigger when 30% of resume section is visible
+
+        observer.observe(resumeSection);
+
+        // Also trigger animation when clicking Resume button
+        const resumeBtn = document.querySelector(".resume-btn a, .resume-btn"); // covers both link or button
+        if (resumeBtn) {
+          resumeBtn.addEventListener("click", () => {
+            setTimeout(() => {
+              animateSkills();
+            }, 800); // small delay to allow scroll to reach the section
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
