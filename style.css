@@ -24,7 +24,7 @@ body {
 }
 
 .navbar.hidden {
-  top: -130px; 
+  top: -140px; 
 }
 
 .logo h1 {
@@ -184,7 +184,6 @@ body {
   color: #000;
 }
 
-/* Sections for navigation scroll */
 .section {
   height: 100vh;
   display: flex;
@@ -195,7 +194,6 @@ body {
   background: #0a0a0f;
 }
 
-/* Sections */
 .section {
   padding: 100px 20px;
   color: #fff;
@@ -216,7 +214,6 @@ body {
   margin: 0 auto;
 }
 
-/* Section Titles */
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -225,7 +222,6 @@ body {
   padding-left: 10px;
 }
 
-/* Section Text */
 .section-text {
   font-size: 1.1rem;
   line-height: 1.8;
@@ -234,11 +230,11 @@ body {
 
 #about {
   background-image: url('pic/beautiful-scenery-clear-white-snowy-mountains-hills.jpg');
-  background-size: cover;       /* make it cover the whole section */
-  background-position: center;  /* center the image */
+  background-size: cover;       
+  background-position: center;  
   background-repeat: no-repeat;
-  background-attachment: fixed; /* optional: parallax effect */
-  color: #fff;                  /* keep text visible */
+  background-attachment: fixed; 
+  color: #fff;                  
   position: relative;
   backdrop-filter: blur(0.5px);
   padding: 100px 20px;
@@ -251,7 +247,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 10, 15, 0.6); /* dark overlay for readability */
+  background: rgba(10, 10, 15, 0.6); 
   z-index: 0;
 }
 
@@ -288,7 +284,6 @@ body {
   text-align: left;
 }
 
-/* Projects Grid */
 .projects-grid {
   display: flex;
   flex-direction: row;  /* stack cards vertically */
@@ -301,7 +296,6 @@ body {
   box-shadow: none;
 }
 
-/* Scroll Animation Trigger */
 .section.show {
   opacity: 1;
   transform: translateY(0);
@@ -331,8 +325,8 @@ body {
 }
 
 .project-slider img {
-  width: 400px;         /* exact width in pixels */
-  height: auto;         /* keep aspect ratio */
+  width: 400px;         
+  height: auto;         
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -418,7 +412,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 10, 15, 0.6); /* dark overlay for readability */
+  background: rgba(10, 10, 15, 0.6); 
   backdrop-filter: blur(0.5px);
   z-index: 0;
 }
@@ -736,7 +730,7 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
   /* CONTACT */
   #contact .container {
     margin-top: 0;
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
   .btn {
     overflow: visible;
