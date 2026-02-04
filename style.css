@@ -519,6 +519,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 100%;
   background: rgba(10, 10, 15, 0.413); /* dark overlay */
   z-index: -1;
 }
@@ -649,4 +650,172 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
   transform: scale(1.2);
   color: #a6e0ff;
   text-shadow: 0 0 15px #00fff7, 0 0 25px #00fff7;
+}
+
+/* MOBILE FIXES */
+
+@media (max-width: 768px) {
+
+  /* --- NAVBAR --- */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .logo h1,
+  .logo p {
+    padding-left: 0;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    padding-right: 0;
+    margin-top: 0.8rem;
+  }
+
+  .navbar a {
+    padding: 0.4em 0.6em;
+    font-size: 0.75rem;
+  }
+
+  /* --- HERO --- */
+  .hero {
+    height: auto;
+    padding: 18rem 1.2rem 3rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .left-text h2 {
+    font-size: 2rem;
+    max-width: 100%;
+  }
+
+  .right-text {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-right: 0rem;
+  }
+    .btn {
+    align-self: flex-start;
+  }
+
+  /* --- ABOUT --- */
+  #about .container {
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .about-image img {
+    margin-top: 0;
+  }
+
+  /* --- PROJECTS --- */
+  .project-slider {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .slide img {
+    height: 200px;
+  }
+
+  /* --- CONTACT --- */
+  #contact .container {
+    margin-top: 0;
+    padding-right: 1rem;
+  }
+
+  /* --- RESUME --- */
+  #resume {
+  min-height: auto;
+  height: auto;
+  }
+  .resume-wrapper {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .resume-right h3 {
+    margin-top: 0;
+  }
+
+  .download-btn {
+    font-size: 1.1rem;
+  }
+
+  /* --- FIX MOBILE PERFORMANCE --- */
+  #about,
+  #projects,
+  #contact,
+  #resume,
+  #social {
+    background-attachment: scroll;
+  }
+
+  /* --- GLOBAL SAFETY --- */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+    /* --- FIX HORIZONTAL SWIPE GAP --- */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .hero-content,
+  .section,
+  .container {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* disable reflections that cause overflow on mobile */
+  .navbar a,
+  .btn,
+  .about-image img {
+    -webkit-box-reflect: none;
+  }
+
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+
+  .left-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  #resume {
+  padding-bottom: 3rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
 }
