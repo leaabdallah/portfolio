@@ -403,10 +403,10 @@ body {
 
 #projects {
   background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-lights-aurora-borealis\ \(1\).jpg'); /* replace with your image path */
-  background-size: cover;       /* make it cover the entire section */
-  background-position: center;  /* center the image */
+  background-size: cover;      
+  background-position: center;  
   background-repeat: no-repeat;
-  background-attachment: fixed; /* optional parallax effect */
+  background-attachment: fixed; 
   color: #fff;
   position: relative;
 }
@@ -425,12 +425,12 @@ body {
 
 #projects .container {
   position: relative;
-  z-index: 1;  /* ensures text and slider are above overlay */
+  z-index: 1; 
 }
 
 
 #contact {
-  background-image: url('pic/aerial-view-snow-mountain.jpg'); /* replace with your image path */
+  background-image: url('pic/aerial-view-snow-mountain.jpg'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -447,7 +447,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 10, 15, 0.6); /* dark overlay */
+  background: rgba(10, 10, 15, 0.6); 
   z-index: 0;
 }
 
@@ -509,7 +509,7 @@ body {
   backdrop-filter: blur(0.5px);
   color: #fff;
   position: relative;
-  padding: 100px 43px; /* same horizontal padding as navbar logo */
+  padding: 100px 43px; 
 }
 
 #resume::before {
@@ -520,7 +520,7 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100%;
-  background: rgba(10, 10, 15, 0.413); /* dark overlay */
+  background: rgba(10, 10, 15, 0.413); 
   z-index: -1;
 }
 
@@ -545,7 +545,6 @@ body {
   background-color: #7fb4d0;
 }
 
-/* Layout: Left text + Right skills */
 .resume-wrapper {
   display: flex;
   justify-content: space-between;
@@ -583,10 +582,9 @@ body {
 }
 
 .resume-right h3 {
-  margin-top: 100px; /* to align with education */
+  margin-top: 100px; 
 }
 
-/* Skill Bars */
 .skills {
   margin-top: 10px;
 }
@@ -656,7 +654,7 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
 
 @media (max-width: 768px) {
 
-  /* --- NAVBAR --- */
+  /* NAVBAR */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -680,7 +678,7 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
     font-size: 0.75rem;
   }
 
-  /* --- HERO --- */
+  /* HERO */
   .hero {
     height: auto;
     padding: 18rem 1.2rem 3rem;
@@ -712,7 +710,7 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
     align-self: flex-start;
   }
 
-  /* --- ABOUT --- */
+  /* ABOUT */
   #about .container {
     flex-direction: column;
     padding-left: 0;
@@ -724,23 +722,27 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
     margin-top: 0;
   }
 
-  /* --- PROJECTS --- */
+  /* PROJECTS */
   .project-slider {
     height: auto;
     padding: 20px 10px;
+    overflow: visible;
   }
 
   .slide img {
     height: 200px;
   }
 
-  /* --- CONTACT --- */
+  /* CONTACT */
   #contact .container {
     margin-top: 0;
     padding-right: 1rem;
   }
+  .btn {
+    overflow: visible;
+  }
 
-  /* --- RESUME --- */
+  /* RESUME */
   #resume {
   min-height: auto;
   height: auto;
@@ -758,7 +760,7 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
     font-size: 1.1rem;
   }
 
-  /* --- FIX MOBILE PERFORMANCE --- */
+  /* FOR MOBILE PERFORMANCE */
   #about,
   #projects,
   #contact,
@@ -767,7 +769,7 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
     background-attachment: scroll;
   }
 
-  /* --- GLOBAL SAFETY --- */
+  /* GLOBAL SAFETY */
   img {
     max-width: 100%;
     height: auto;
@@ -776,21 +778,23 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
   body {
     overflow-x: hidden;
   }
-    /* --- FIX HORIZONTAL SWIPE GAP --- */
+
   html, body {
     max-width: 100%;
     overflow-x: hidden;
   }
 
   .hero,
-  .hero-content,
+  .hero-content {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
   .section,
   .container {
-    max-width: 100vw;
-    overflow-x: hidden;
+    overflow-x: visible;
   }
 
-  /* disable reflections that cause overflow on mobile */
   .navbar a,
   .btn,
   .about-image img {
@@ -799,7 +803,6 @@ background-image: url('pic/beautiful-view-night-winter-landscape-with-northern-l
 
 }
 
-/* Extra small phones */
 @media (max-width: 480px) {
 
   .left-text h2 {
